@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lone Soldier</title>
+    <style>
+        body{
+            margin:0;
+        }
+        #background{
+            background: black;
+            height: 500px;
+            width: 500px;
+        }
+
+        #soldier{
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            background: red;
+            /* visibility: hidden; */
+        }
+
+        #laser_up{
+            position: absolute;
+            height: 10px;
+            width: 3px;
+            background: yellow;
+            visibility: hidden;
+        }
+
+        #laser_down{
+            position: absolute;
+            height: 10px;
+            width: 3px;
+            background: yellow;
+            visibility: hidden;
+        }
+
+        #laser_left{
+            position: absolute;
+            height: 3px;
+            width: 10px;
+            background: yellow;
+            visibility: hidden;
+        }
+
+        #laser_right{
+            position: absolute;
+            height: 3px;
+            width: 10px;
+            background: yellow;
+            visibility: hidden;
+        }
+
+        .enemy{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background: lightblue;
+            visibility: visible;
+        }
+
+
+        #enemy_spawn_left {
+            position: absolute;
+            height: 100px;
+            width: 30px;
+            top: 195px;
+            left: 0;
+            background: blue;
+        }
+
+        #enemy_spawn_right {
+            position: absolute;
+            height: 100px;
+            width: 30px;
+            top: 195px;
+            left: 470px;
+            background: blue;
+        }
+
+        #enemy_spawn_up {
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            top: 0;
+            left: 195px;
+            background: blue;
+        }
+
+        #enemy_spawn_down {
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            top: 470px;
+            left: 195px;
+            background: blue;
+        }
+
+        #score{
+            position: absolute;
+            color: white;
+            font-size: 35px;
+            top: 17px;
+            left: 17px;
+        }
+
+        #gameover{
+            position: absolute;
+            font-size: 50px;
+            top: 195px;
+            left: 100px;
+            color:red;
+            visibility: hidden;
+        }
+
+        #finalScore{
+            position: absolute;
+            font-size: 30px;
+            top: 255px;
+            left: 168px;
+            color: white;
+            visibility: hidden;
+        }
+
+        #levelcount{
+            position: absolute;
+            font-size: 22px;
+            color: white;  
+            top: 320px;
+            left: 165px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spawn" id="enemy_spawn_left"></div>
+    <div class="spawn" id="enemy_spawn_down"></div>
+    <div class="spawn" id="enemy_spawn_right"></div>
+    <div class="spawn" id="enemy_spawn_up"></div>
+    
+    <div id="background"></div>
+    <div id="soldier"></div>
+    <div id="laser_up"></div>
+    <div id="laser_right"></div>
+    <div id="laser_left"></div>
+    <div id="laser_down"></div>
+    <div id="score"></div>
+    <div id="gameover">GAME OVER</div>
+    <div id="finalScore"></div>
+    <div id="levelcount"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
