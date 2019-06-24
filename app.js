@@ -1,7 +1,7 @@
-let LEFT_KEY = 37;
-let RIGHT_KEY = 39;
-let UP_KEY = 38;
-let DOWN_KEY = 40;
+let LEFT_KEY = 65;
+let RIGHT_KEY = 68;
+let UP_KEY = 87;
+let DOWN_KEY = 83;
 let SPACE_KEY = 32;
 let LASER_MOVEMENT = 10;
 
@@ -114,6 +114,7 @@ function showLevel() {
 showLevel();
 
 function keyToggle(keyCode, isPressed) {
+    console.log(keyCode)
     if (keyCode == LEFT_KEY) {
         controller.left = isPressed;
     };
